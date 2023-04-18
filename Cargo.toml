@@ -1,0 +1,16 @@
+[package]
+name = "oxyutils"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "punch"
+path = "src/punch.rs"
+
+[dependencies]
+clap = { version = "4.2.2", features = ["derive"] }
+bytesize = "1.2.0"
+nix = "0.26.2"
+libc = "0.2.141"
